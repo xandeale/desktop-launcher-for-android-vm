@@ -1,0 +1,8 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Name=Android VM
+Exec=bash -c "NUM=1;DEVICES=$(~/Android/Sdk/emulator/emulator -list-avds 2>&1 | sed -n ${NUM}p) && ~/Android/Sdk/emulator/emulator @${DEVICES}"
+Comment=
+Terminal=false
+Icon=android-studio
+Type=Application
